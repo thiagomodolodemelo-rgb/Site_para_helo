@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Heloise Melo - Pediatra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Quicksand', 'Segoe UI', sans-serif;
+            background-color: #FBFBED;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px 80px;
+        }
+        .container {
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* LOGO */
+        .logo-wrapper {
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 180px;
+            width: 100%;
+            height: auto;
+        }
+        .logo-placeholder {
+            display: none;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px;
+            border: 2px dashed #d4a574;
+            border-radius: 50%;
+            line-height: 180px;
+            color: #c9a57e;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        /* NOME */
+        h1 {
+            color: #5a4a3a;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 2px;
+            letter-spacing: 0.5px;
+        }
+        .profession {
+            color: #a0856b;
+            font-size: 16px;
+            letter-spacing: 3px;
+            text-transform: lowercase;
+            margin-bottom: 35px;
+        }
+
+        /* BOTÕES */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 18px 24px;
+            margin-bottom: 14px;
+            background-color: #E6AA68;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(230, 170, 104, 0.3);
+        }
+        .btn:hover {
+            background-color: #d99550;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 170, 104, 0.4);
+        }
+        .btn-icon {
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        /* RODAPÉ */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #E299A8;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- LOGOTIPO -->
+        <div class="logo-wrapper">
+            <img src="logo.png" alt="Heloise Melo Pediatra" class="logo"
+                 onerror="this.style.display='none'; document.querySelector('.logo-placeholder').style.display='block';">
+            <div class="logo-placeholder">LOGO AQUI</div>
+        </div>
+
+        <h1>Heloise Melo</h1>
+        <p class="profession">pediatra</p>
+
+        <!-- AGENDAR CONSULTA (WhatsApp) -->
+        <a href="https://wa.me/41995199919?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." class="btn">
+            <span class="btn-icon">📅</span> Agende sua consulta
+        </a>
+
+        <!-- FALE CONOSCO (Telefone) -->
+        <a href="tel:+554130191999" class="btn">
+            <span class="btn-icon">💬</span> Fale conosco
+        </a>
+
+        <!-- ENVIE UM E-MAIL -->
+        <a href="mailto:ped.heloisemelo@gmail.com" class="btn">
+            <span class="btn-icon">✉️</span> Envie um e-mail
+        </a>
+
+        <!-- NOSSO ENDEREÇO -->
+        <a href="https://www.google.com/maps/search/?api=1&query=R+Euclides+da+Cunha+441+Curitiba" class="btn" target="_blank">
+            <span class="btn-icon">📍</span> Nosso endereço
+        </a>
+
+    </div>
+
+    <!-- RODAPÉ -->
+    <div class="footer">
+        CRM PR 51324 | RQE 38485
+    </div>
+</body>
+</html>
